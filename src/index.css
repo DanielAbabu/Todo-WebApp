@@ -1,0 +1,24 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;    box-sizing: border-box;
+
+  }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure body takes full height */
+    min-height: 100%; /* Ensure body can expand */
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+
+    background-image: url("assets/2.jpg");
+    background-color: rgb(249, 249, 249);
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover ensures full background coverage while maintaining aspect ratio */
+}

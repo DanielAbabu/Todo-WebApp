@@ -1,0 +1,132 @@
+:root {
+    --form-control-color: rgb(20, 20, 20);
+  }
+
+.app{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    min-height: 500px;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 15px;
+}
+
+.newitem label{
+    font-weight: 900;
+    color: rgb(48, 48, 48);
+}
+.newitem{
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(241, 241, 241); */
+    border: 0px solid grey;
+    border-width: 0 0 0px 0;
+    width: 400px;
+}
+
+
+.newitem button{
+    margin: 0px 10px 20px 10px;
+    padding: 5px 20px;
+    background-color: white;
+    border-width: 1px;
+    box-shadow: 2px 2px;
+}
+
+.newitem button:active {
+    box-shadow: 0 0px;
+    transform: translateY(2px) translateX(2px);
+}
+
+.newitem input{
+    margin: 10px ;
+    border-width: 1px;
+    height: 30px;
+}
+
+.newitem label{
+    margin: 10px ;
+    font-size: larger;
+    align-self: center;
+}
+
+.list{
+    color: rgb(171, 171, 171);
+
+    display: block;
+    justify-content: center;
+    padding-top: 15px;
+    /* background-color: rgb(220, 254, 153); */
+}
+
+.itemm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+
+    color: rgb(53, 53, 53);
+
+    background-color: rgb(255, 254, 254);
+    padding: 10px;
+    border: 1px solid rgb(241, 241, 241);
+}
+.itemm input.checkk{
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--form-background);
+    margin: 0;
+  
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.1em solid rgb(110, 110, 110);
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+  
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+
+.items{
+    display: flex;
+    align-items: center;
+}
+
+.delete{ 
+    width: 80px;
+    height: 30px;
+    border-width: 0;
+    background-color:rgba(150, 6, 6, 0);
+    border-radius: 3px;
+    color: white;
+}
+
+.delete:hover{
+    cursor: pointer;
+
+}
